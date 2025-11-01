@@ -17,7 +17,7 @@ app.use(errorHandler)
 
 const MONGO_URI =
   process.env.MONGO_URI ||
-  'mongodb+srv://jonysmoker:8QI7zdvHRk1Eb2r1@cluster0.kzzzsgv.mongodb.net/project?retryWrites=true&w=majority&appName=Cluster0'
+  'mongodb+srv://jonysmoker:8QI7zdvHRk1Eb2r1@cluster0.kzzzsgv.mongodb.net/user_service?retryWrites=true&w=majority&appName=Cluster0'
 
 mongoose
   .connect(MONGO_URI)

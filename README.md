@@ -41,7 +41,7 @@ npm run dev
 | POST  | /auth/login      | Public       | { email, password }                                               | { token }                                                                        | Если пользователь заблокирован — 403               |
 | GET   | /users/:id       | Admin / Self | —                                                                 | { id, firstName, lastName, patronymic?, email, dob, role, isActive }             | 404 если не найден, 403 если нет доступа           |
 | GET   | /users           | Admin        | —                                                                 | [ { id, firstName, lastName, patronymic?, email, dob, role, isActive }, ... ]    | Только для админа                                  |
-| PATCH | /users/:id/block | Admin / Self | —                                                                 | { id, isActive }                                                                 | Блокировка или разблокировка пользователя          |
+| PATCH | /users/:id/block | Admin / Self | —                                                                 | { id, isActive }                                                                 | Блокировка пользователя                            |
 
 ---
 
